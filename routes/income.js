@@ -24,7 +24,7 @@ userRoutes.route("/income").get(async function (req, res) {
 userRoutes.route("/income").post(function (req, res) {
     const dbConnect = dbo.getDb();
     const matchDocument = {
-        name: req.body.name,
+        title: req.body.title,
         amount: req.body.amount,
         date: Date.now()
     };
